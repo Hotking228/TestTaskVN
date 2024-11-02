@@ -149,9 +149,9 @@ MonoBehaviour:
     - name: StartScene
       pathPrefix: Scripts
       guid: 5a5b98a4c41cc6c458ba111c1bee94f0
-    - name: ChoiceScene
+    - name: FindCouple
       pathPrefix: Scripts
-      guid: 7c72a0763852de5499c8bc8723a89aeb
+      guid: fad636d485bbe2442a5c0243b5cdf2a8
   - Id: Characters/97a254f5-2b5f-4d04-80de-d135dc0c5b56
     Resources:
     - name: Default
