@@ -152,6 +152,9 @@ MonoBehaviour:
     - name: FindCouple
       pathPrefix: Scripts
       guid: fad636d485bbe2442a5c0243b5cdf2a8
+    - name: FinalScene
+      pathPrefix: Scripts
+      guid: f29484d6856b82c44bdb7000c5afbf7e
   - Id: Characters/97a254f5-2b5f-4d04-80de-d135dc0c5b56
     Resources:
     - name: Default

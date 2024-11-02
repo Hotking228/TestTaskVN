@@ -1,4 +1,5 @@
-
+@addScore 10
+#AfterAdd
 @hideAll
 @loadScene FindCouple
 @stop

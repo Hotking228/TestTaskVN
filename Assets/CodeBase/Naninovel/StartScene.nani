@@ -3,5 +3,5 @@
 @char NPC_A
 — Привет, путник! Ты не мог бы мне помочь? У меня есть небольшое задание, которое требует немного смелости и ловкости. Если ты согласен, я расскажу детали.
 @choice Согласиться goto:FindCouple
-@choice Отказаться goto:FindCouple
+@choice Отказаться goto:FindCouple.AfterAdd
 @stop

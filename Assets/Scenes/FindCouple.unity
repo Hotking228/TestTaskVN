@@ -339,6 +339,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4bf34ed90fc6cc34a8de4450edf4314c, type: 3}
+--- !u!114 &7279439567465216962 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4539071160196816183, guid: 4bf34ed90fc6cc34a8de4450edf4314c, type: 3}
+  m_PrefabInstance: {fileID: 7279439567465216961}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c326794a958628742a1e6647b6e4e08e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &7940827960838128044
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -391,6 +402,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3382703301960171304, guid: e73bf23f68efa3f4099d19a41e4ee28d, type: 3}
+      propertyPath: generateDesk
+      value: 
+      objectReference: {fileID: 7279439567465216962}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

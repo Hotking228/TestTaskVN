@@ -5,10 +5,12 @@ using UnityEngine;
 public class FindCoupleManager : MonoBehaviour
 {
     private Card firstOpened;
-    
-
+    private int openedCards;
+    private bool interactible = true;
+    [SerializeField] private GenerateDesk generateDesk;
     private void Update()
     {
+        if (!interactible) return;
         if (Input.GetMouseButtonDown(0))
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
@@ -31,6 +33,11 @@ public class FindCoupleManager : MonoBehaviour
                         else if(firstOpened != card)
                         {
                             firstOpened = null;
+                            openedCards += 2;
+                            if (openedCards == generateDesk.CardCount)
+                            {
+                                PlayerBag.Instance.ChangeScore(5);
+                            }
                         }
                     }
                 }
@@ -41,10 +48,12 @@ public class FindCoupleManager : MonoBehaviour
 
     private IEnumerator CloseCardsAfterTime(float time, Card secondOpened)
     {
+        interactible = false;
         yield return new WaitForSeconds(time);
         firstOpened.CloseCard();
         secondOpened.CloseCard();
         firstOpened = null;
+        interactible = true;
     }
 
 

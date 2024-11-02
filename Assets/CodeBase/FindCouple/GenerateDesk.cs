@@ -8,6 +8,7 @@ public class GenerateDesk : MonoBehaviour
     [SerializeField] private Sprite[] images;
     [SerializeField] private Card cardPrefab;
     [SerializeField] private int cardCount = 16;
+    public int CardCount => cardCount;
     private int[][] cardsUnitPos;
 
     [SerializeField] private float xOffset = 1.25f;
