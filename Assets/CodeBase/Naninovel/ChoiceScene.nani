@@ -1,0 +1,6 @@
+@back Default
+@char Main_Character
+@char NPC_A
+@choice Согласиться 
+@choice Отказаться
+@stop
