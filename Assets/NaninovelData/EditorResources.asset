@@ -186,3 +186,6 @@ MonoBehaviour:
     - name: angry_character
       pathPrefix: Audio
       guid: 83812172f57eda247a91057ed62f9d12
+    - name: win_level
+      pathPrefix: Audio
+      guid: eccb8295c416919429e70aac556ca0ec
