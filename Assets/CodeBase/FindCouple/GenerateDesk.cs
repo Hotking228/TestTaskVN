@@ -88,7 +88,7 @@ public class GenerateDesk : MonoBehaviour
         int cardCountLeft = cardCount;
         for (int i = 0; i < images.Length - 1; i++)
         {
-            int currentCards = Random.Range(0, (int)(cardCountLeft / 2)) * 2;
+            int currentCards = Random.Range(1, (int)(cardCountLeft / cardCount)) * 2;
 
             for (int j = 0; j < currentCards; j++)
             {
