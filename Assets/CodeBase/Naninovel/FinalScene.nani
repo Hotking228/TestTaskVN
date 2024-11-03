@@ -1,12 +1,16 @@
+@bgm win_level loop:false
 @back Village
+@wait 2
 @char NPC_A
 @char Main_Character
 #Boolean anouthScore
 @checkScore 14
 @if anouthScore
+@bgm happy_character loop:false
 *С радостью, хлопая игрока по плечу.*  
 — Отличная работа! Я знал, что могу на тебя рассчитывать! Теперь мой друг получит важные новости. Спасибо тебе!
 @else
+@bgm angry_character loop:false
 — Что произошло?! Ты не справился с заданием? Я надеялся на тебя! Это было очень важно для меня!
 @endif
 @stop

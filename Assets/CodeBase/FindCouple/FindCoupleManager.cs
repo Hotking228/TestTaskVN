@@ -11,6 +11,9 @@ public class FindCoupleManager : MonoBehaviour
     private int openedCards;
     private bool interactible = true;
     [SerializeField] private GenerateDesk generateDesk;
+    [SerializeField] private ImpactEffect impactEffectFlipCard;
+    [SerializeField] private ImpactEffect impactEffectWin;
+    [SerializeField] private ImpactEffect impactEffectMistake;
     Script naniScript;
 
     private void Update()
@@ -28,33 +31,47 @@ public class FindCoupleManager : MonoBehaviour
                 {
                     if (card.IsClosed)
                     {
-                        if (firstOpened == null)
-                            firstOpened = card;
-                        card.OpenCard();
-                        if (firstOpened != card && firstOpened.Type != card.Type)
-                        {
-                            StartCoroutine(CloseCardsAfterTime(2f, card));
-                        }
-                        else if(firstOpened != card)
-                        {
-                            firstOpened = null;
-                            openedCards += 2;
-                            if (openedCards == generateDesk.CardCount)
-                            {
-                                PlayerBag.Instance.ChangeScore(5);
-                                SceneManager.LoadScene(2);
-                                var scriptPlayer = Engine.GetService<ScriptPlayer>();
-
-                                scriptPlayer.PlayFromLabel("StartNewLevel");
-
-                            }
-                        }
+                        CheckCard(card);
                     }
                 }
             }
         }
     }
 
+    private void CheckCard(Card card)
+    {
+        Instantiate(impactEffectFlipCard, Vector3.zero, Quaternion.identity);
+        if (firstOpened == null)
+            firstOpened = card;
+        card.OpenCard();
+        
+        if(firstOpened != card)
+        {
+            //если карты не совпадают
+            if (firstOpened.Type != card.Type)
+            {
+                Instantiate(impactEffectMistake, Vector3.zero, Quaternion.identity);
+                StartCoroutine(CloseCardsAfterTime(2f, card));
+            }
+            //если совпадают
+            if (firstOpened.Type == card.Type)
+            {
+                Instantiate(impactEffectWin, Vector3.zero, Quaternion.identity);
+                firstOpened = null;
+                openedCards += 2;
+                if (openedCards == generateDesk.CardCount)
+                {
+                    PlayerBag.Instance.ChangeScore(5);
+                    SceneManager.LoadScene(2);
+                    var scriptPlayer = Engine.GetService<ScriptPlayer>();
+
+                    scriptPlayer.PlayFromLabel("StartNewLevel");
+                }
+            }
+        }
+
+        
+    }
 
     private IEnumerator CloseCardsAfterTime(float time, Card secondOpened)
     {

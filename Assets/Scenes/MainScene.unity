@@ -222,13 +222,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 851711857968827233, guid: 5ad15bf633a6eaa468cd548960935dcf, type: 3}
-      propertyPath: m_text
-      value: Score:1000
-      objectReference: {fileID: 0}
     - target: {fileID: 6572555939495684506, guid: 5ad15bf633a6eaa468cd548960935dcf, type: 3}
       propertyPath: m_Name
-      value: PlayerBag
+      value: GlobalController
       objectReference: {fileID: 0}
     - target: {fileID: 7194368465633246488, guid: 5ad15bf633a6eaa468cd548960935dcf, type: 3}
       propertyPath: m_Pivot.x

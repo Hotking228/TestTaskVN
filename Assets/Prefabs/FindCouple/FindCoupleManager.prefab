@@ -44,3 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ecd6b0dc871b2f41ab7cddf4be6ae43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  generateDesk: {fileID: 0}
+  impactEffectFlipCard: {fileID: 2640028786398781871, guid: 41dfdf0ef81c45e4197dbea434a37deb, type: 3}
+  impactEffectWin: {fileID: 2640028786398781871, guid: 6bd414c3264e9ed499b1e28f395484b4, type: 3}
+  impactEffectMistake: {fileID: 2640028786398781871, guid: 7ff98ed96d9499946abef56d903bfab0, type: 3}

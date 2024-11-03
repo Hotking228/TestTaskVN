@@ -406,6 +406,10 @@ PrefabInstance:
       propertyPath: generateDesk
       value: 
       objectReference: {fileID: 7279439567465216962}
+    - target: {fileID: 3382703301960171304, guid: e73bf23f68efa3f4099d19a41e4ee28d, type: 3}
+      propertyPath: impactEffectFlipCard
+      value: 
+      objectReference: {fileID: 2640028786398781871, guid: 41dfdf0ef81c45e4197dbea434a37deb, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

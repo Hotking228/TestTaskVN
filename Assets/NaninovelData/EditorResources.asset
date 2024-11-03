@@ -178,3 +178,11 @@ MonoBehaviour:
     - name: Default
       pathPrefix: Characters/NPC_B
       guid: e6fad8d0a64fa824b9e49a0977033213
+  - Id: Audio
+    Resources:
+    - name: happy_character
+      pathPrefix: Audio
+      guid: 9e6bfc454d3dfa949b9c9689b89bf232
+    - name: angry_character
+      pathPrefix: Audio
+      guid: 83812172f57eda247a91057ed62f9d12
