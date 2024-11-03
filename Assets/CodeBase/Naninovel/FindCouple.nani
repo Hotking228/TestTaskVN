@@ -1,5 +1,8 @@
+# StartNewLevel
+@goto FinalScene
+# AfterStartNewLevel
 @addScore 10
-#AfterAdd
+# AfterAdd
 @hideAll
 @loadScene FindCouple
 @stop

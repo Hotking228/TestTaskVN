@@ -1,6 +1,9 @@
+using Naninovel;
+using Naninovel.Commands;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class FindCoupleManager : MonoBehaviour
 {
@@ -8,6 +11,8 @@ public class FindCoupleManager : MonoBehaviour
     private int openedCards;
     private bool interactible = true;
     [SerializeField] private GenerateDesk generateDesk;
+    Script naniScript;
+
     private void Update()
     {
         if (!interactible) return;
@@ -37,6 +42,11 @@ public class FindCoupleManager : MonoBehaviour
                             if (openedCards == generateDesk.CardCount)
                             {
                                 PlayerBag.Instance.ChangeScore(5);
+                                SceneManager.LoadScene(2);
+                                var scriptPlayer = Engine.GetService<ScriptPlayer>();
+
+                                scriptPlayer.PlayFromLabel("StartNewLevel");
+
                             }
                         }
                     }

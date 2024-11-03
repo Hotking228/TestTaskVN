@@ -1,6 +1,9 @@
+@back Village
+@char NPC_A
+@char Main_Character
 #Boolean anouthScore
 @checkScore 14
-@if anouthScore 
+@if anouthScore
 *С радостью, хлопая игрока по плечу.*  
 — Отличная работа! Я знал, что могу на тебя рассчитывать! Теперь мой друг получит важные новости. Спасибо тебе!
 @else

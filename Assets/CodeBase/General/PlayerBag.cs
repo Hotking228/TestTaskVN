@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using Naninovel;
 
 public class PlayerBag : MonoSingleton<PlayerBag>
 {
@@ -14,7 +15,7 @@ public class PlayerBag : MonoSingleton<PlayerBag>
         score += change;
         UIChangeScore();
     }
-
+   
 
 
     private void UIChangeScore()

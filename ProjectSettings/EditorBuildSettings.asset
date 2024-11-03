@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/FindCouple.unity
     guid: 236ed4fb39f100f4a8b5500001af7d86
+  - enabled: 1
+    path: Assets/Scenes/FinalScene.unity
+    guid: b0cfcfafdbd1df04786d8eaa29bef9a2
   m_configObjects: {}

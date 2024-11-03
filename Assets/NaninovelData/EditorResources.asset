@@ -165,6 +165,9 @@ MonoBehaviour:
     - name: Default
       pathPrefix: Backgrounds/MainBackground
       guid: eebcfdd3281cc2b41847f9cfc2422804
+    - name: Village
+      pathPrefix: Backgrounds/MainBackground
+      guid: ced998ea51b147c4aa196b3e23f72698
   - Id: Characters/27ae6830-861c-4eb9-92a7-08c886c557ae
     Resources:
     - name: Default

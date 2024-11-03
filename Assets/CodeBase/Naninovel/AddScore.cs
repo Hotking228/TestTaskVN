@@ -22,8 +22,7 @@ public class AddScore : Command
 [CommandAlias("checkScore")]
 public class CheckScore : Command
 {
-   /* [ParameterAlias(NamelessParameterAlias)]
-    public BooleanParameter anouthScore;*/
+
 
     [ParameterAlias(NamelessParameterAlias)]
     public IntegerParameter reqiuredScore;
