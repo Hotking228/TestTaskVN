@@ -34,3 +34,18 @@ public class CheckScore : Command
         return UniTask.CompletedTask; 
     }
 }
+[CommandAlias("showScorePanel")]
+public class ShowScorePanel : Command
+{
+
+
+    [ParameterAlias(NamelessParameterAlias)]
+    public IntegerParameter reqiuredScore;
+
+    public override UniTask ExecuteAsync(AsyncToken asyncToken = default)
+    {
+        PlayerBag.Instance.ShowScore();
+
+        return UniTask.CompletedTask;
+    }
+}

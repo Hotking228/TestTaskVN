@@ -173,3 +173,8 @@ MonoBehaviour:
     - name: Default
       pathPrefix: Characters/NPC_A
       guid: 748cc4ca0fbebda4aa41bcbac25a4989
+  - Id: Characters/92df33ea-9cb0-49a9-b4ec-c9ceef6c9b0e
+    Resources:
+    - name: Default
+      pathPrefix: Characters/NPC_B
+      guid: e6fad8d0a64fa824b9e49a0977033213

@@ -7,6 +7,7 @@ using Naninovel;
 public class PlayerBag : MonoSingleton<PlayerBag>
 {
     [SerializeField] private int score;
+
     public int Score => score;
     [SerializeField] private TextMeshProUGUI scoreText;
 
@@ -15,17 +16,31 @@ public class PlayerBag : MonoSingleton<PlayerBag>
         score += change;
         UIChangeScore();
     }
-   
 
+    private void Start()
+    {
+        UIChangeScore();
+    }
 
     private void UIChangeScore()
     {
         if(scoreText != null)
-        scoreText.text = score.ToString();
+        scoreText.text = "Score : " + score.ToString();
     }
 
     public bool CheckScore(int check)
     {
         return score >= check;
+    }
+
+
+    public void ShowScore()
+    {
+        scoreText.transform.parent.gameObject.SetActive(true);
+    }
+
+    public void HideScore()
+    {
+        scoreText.transform.parent.gameObject.SetActive(false);
     }
 }
